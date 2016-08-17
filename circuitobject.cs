@@ -25,7 +25,7 @@ namespace circuitobject
             this.name = name;
             this.type = dataTable.Row[name].rows["type"];
             this.value = dataTable.Row[name].rows["value"];
-            this.neighborsCount = nieghbors.Count();
+            this.neighborsCount = neighbors.Count();
 
             this.iswithinlimits = checklimits(value);
 
@@ -48,7 +48,7 @@ namespace circuitobject
     {
         public string name { get; set; }
         public int neighborsCount;
-        public List<node> nieghbors;
+        public List<node> neighbors;
 
         public node()
         {
@@ -58,7 +58,7 @@ namespace circuitobject
         public node(string name)
         {
           
-            
+         // populate nieghbors list   
 
 
         }

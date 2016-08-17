@@ -8,6 +8,9 @@ namespace circuitobject
 {
     class testexecutive
     {
+        string[] pcolaheader = { "P", "C", "O", "L", "A", "Sh", "Op", "Q" };
+        float[] scores = new float[8];
+
         static void main(string[] argc)
         {
 
@@ -15,11 +18,11 @@ namespace circuitobject
 
             foreach (string compName in components)
             {
+                
                 component c = new component(compName);
-                if (c.hasNeighbors)
+                if (c.neighborsCount < 2)
                 {
-
-
+                        
 
                 }
 
